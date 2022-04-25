@@ -1,0 +1,14 @@
+html, body, #root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* h1 {
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  color: #ff5436;
+  white-space: nowrap;
+} */
