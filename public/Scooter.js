@@ -57,7 +57,7 @@ export default function InstancedModel(props) {
     [nodes]
   )
   return (
-    <Merged meshes={instances} {...props}>
+    <Merged castShadow receiveShadow meshes={instances} {...props}>
       {(instances) => <Model instances={instances} />}
     </Merged>
   )

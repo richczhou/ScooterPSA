@@ -25,9 +25,9 @@ export default function InstancedScooter(props) {
   // }))
   const [ref, api] = useCompoundBody(() => ({ 
     args: [1], 
-    mass: 1.5, 
+    mass: 1.25, 
     angularDamping: 0.3, 
-    linearDamping: 0.75, 
+    linearDamping: 0.9, 
     position: [rfs(20), rfs(20), rfs(20)],
     rotation: [rfs(Math.PI), rfs(Math.PI), rfs(Math.PI)],
     shapes: [
@@ -91,7 +91,7 @@ export default function InstancedScooter(props) {
 
   return (
     <>
-    <Merged castShadow receiveShadow meshes={instances} {...props}>
+    <Merged meshes={instances} {...props}>
       {(instances) => <Model ref={ref} instances={instances} />}
     </Merged>
 
